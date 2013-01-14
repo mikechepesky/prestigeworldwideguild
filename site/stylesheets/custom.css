@@ -1,0 +1,8 @@
+/* This file contains custom CSS for the Prestige Worldwide guild website */
+
+/* Orbit slider on main page
+   Overridden so that partial content isn't displayed */
+#slider div { display: none; }
+#slider img { display: none; }
+#slider.orbit div { display: block; }
+#slider.orbit img { display: block; }

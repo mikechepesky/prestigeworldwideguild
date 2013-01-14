@@ -21,6 +21,7 @@
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="stylesheets/foundation.min.css">
   <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="stylesheet" href="stylesheets/custom.css">
 
   <script src="javascripts/modernizr.foundation.js"></script>
 
@@ -31,71 +32,82 @@
 
 </head>
 <body>
-<!-- Header and Nav -->
+<!-- Header and external links -->
   
   <div class="row">
-    <div class="three columns">
-      <h1><img src="http://placehold.it/400x100&text=Logo" /></h1>
+    <div class="six columns">
+      <h1 class="subheader">Prestige Wörldwide
+	  
+	  <!-- <img src="http://placehold.it/400x100&text=Logo" /> --> </h1>
     </div>
-    <div class="nine columns">
+    <div class="six columns">
       <ul class="nav-bar right">
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
+        <li><a href="http://us.blizzard.com/en-us/">Blizzard Home</a></li>
+        <li><a href="http://us.battle.net/wow/en/">WoW Home</a></li>
+        <li><a href="http://us.battle.net/wow/en/forum/">WoW Forums</a></li>
       </ul>
     </div>
   </div>
   
-  <!-- End Header and Nav -->
+  <!-- End header and external links -->
   
-  
-  <!-- First Band (Image) -->
-    
-  <div class="row">
-    <div class="twelve columns">
-      <img src="http://placehold.it/1000x400&text=[img]" />
-      
-      <hr />
+  <!-- Orbit content slider -->
+<div class="row">
+  <div class="twelve columns">
+    <div id="slider">
+      <img src="http://placehold.it/1000x400&text=[img 1]" data-caption="#captionOne"/>
+      <img src="http://placehold.it/1000x400&text=[img 2]" data-caption="#captionTwo"/>
+      <img src="http://placehold.it/1000x400&text=[img 3]" data-caption="#captionThree"/>
+      <img src="http://placehold.it/1000x400&text=[img 4]" data-caption="#captionFour"/>
     </div>
+    <span class="orbit-caption" id="captionOne">Here is the first caption.</span>
+    <span class="orbit-caption" id="captionTwo">Here is the second caption.</span>
+    <span class="orbit-caption" id="captionThree">Here is the third caption.</span>
+    <span class="orbit-caption" id="captionFour">Here is the fourth caption.</span>
   </div>
+</div>
   
-  
-  <!-- Second Band (Image Left with Text) -->
-  
-  <div class="row">
-    <div class="four columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-    </div>
-    <div class="eight columns">
-      <h4>This is a content section.</h4>
-      <div class="row">
-        <div class="six columns">
-          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+<!-- Left Nav -->
+<div class="row">
+  <div class="three columns">
+    <ul class="nav-bar vertical">
+      <li class="active"><a href="#">Nav Item 1</a></li>
+      <li class="has-flyout">
+        <a href="#">Nav Item 2</a>
+        <a href="#" class="flyout-toggle"><span> </span></a>
+        <ul class="flyout">
+          <li><a href="#">Sub Nav Item 1</a></li>
+          <li><a href="#">Sub Nav Item 2</a></li>
+          <li><a href="#">Sub Nav 3</a></li>
+          <li><a href="#">Sub Nav 4</a></li>
+          <li><a href="#">Sub Nav Item 5</a></li>
+        </ul>
+      </li>
+      <li class="has-flyout">
+        <a href="#">Nav Item 3</a>
+        <a href="#" class="flyout-toggle"><span> </span></a>
+        <div class="flyout">
+          <h5>Regular Dropdown</h5>
+          <div class="row">
+            <div class="six columns">
+              <p>This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.</p>
+            </div>
+            <div class="six columns">
+              <p>This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.</p>
+            </div>
+          </div>
         </div>
-        <div class="six columns">
-          <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-        </div>
-      </div>
-    </div>
+      </li>
+      <li>
+        <a href="#">Nav Item 4</a>
+      </li>
+    </ul>
   </div>
   
-  
-  <!-- Third Band (Image Right with Text) -->
-  
-  <div class="row">
-    <div class="eight columns">
-      <h4>This is a content section.</h4>
-      
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      
-      <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-          
-    </div>
-    <div class="four columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-    </div>
+  <div class="nine columns">
+    <h4>Content section.</h4>
   </div>
+</div>
   
   
   <!-- Footer -->
@@ -118,5 +130,19 @@
       </div>
     </div> 
   </footer>
+
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+  
+  <!-- Include Orbit scripts -->
+  <script type="text/javascript">
+   $(window).load(function() {
+       $("#slider").orbit();
+   });
+  </script>
 </body>
 </html>
