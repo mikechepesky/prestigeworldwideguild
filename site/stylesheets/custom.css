@@ -5,7 +5,16 @@
 #slider { background: center center #f4f4f4; height: 381px; }
 #slider div { display: none; }
 #slider img { display: none; }
-
 #slider.orbit { background: none; }
 #slider.orbit div { display: block; }
 #slider.orbit img { display: block; }
+
+/* Vertical tabs, used for left nav
+   Overridden for color */
+.tabs.vertical { height: auto; border-bottom: 1px solid #e6e6e6; }
+.tabs.vertical dt, .tabs.vertical dd, .tabs.vertical li { float: none; height: auto; }
+.tabs.vertical dd, .tabs.vertical li { border-left: 3px solid #cccccc; }
+.tabs.vertical dd a, .tabs.vertical li a { background: #f2f2f2; border: none; border: 1px solid #e6e6e6; border-width: 1px 1px 0 0; color: #555; display: block; font-size: 14px; height: auto; line-height: 1; padding: 15px 20px; -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; }
+.tabs.vertical dd.active, .tabs.vertical li.active { margin-top: 0; border-top: 1px solid #2ba6cb; border-left: 4px solid #145366; }
+.tabs.vertical dd.active a, .tabs.vertical li.active a { background: #2ba6cb; border: none; color: #eee; height: auto; margin: 0; position: static; top: 0; -webkit-box-shadow: 0 0 0; -moz-box-shadow: 0 0 0; box-shadow: 0 0 0; }
+.tabs.vertical dd:first-child a.active, .tabs.vertical li:first-child a.active { margin: 0; }

@@ -67,22 +67,70 @@
   </div>
 </div>
   
-<!-- Left Nav -->
+<!-- Main content area (left nav and content) -->
 <div class="row">
+  <!-- Left nav -->
   <div class="three columns">
     <dl class="vertical tabs">
-      <dd class="active"><a href="#simple1">Home</a></dd>
-      <dd><a href="#simple2">About Us</a></dd>
-      <dd><a href="#">Guild Rules</a></dd>
-      <dd><a href="#">Raid Calendar</a></dd>
-      <dd><a href="#">Guild Roster</a></dd>
-      <dd><a href="#">Forums</a></dd>
-      <dd><a href="#">Gallery</a></dd>
-      <dd><a href="#">Resources</a></dd>
+      <dd class="active"><a href="#home">Home</a></dd>
+      <dd><a href="#about">About Us</a></dd>
+      <dd><a href="#rules">Guild Rules</a></dd>
+      <dd><a href="#calendar">Raid Calendar</a></dd>
+      <dd><a href="#roster">Guild Roster</a></dd>
+      <dd><a href="#forums">Forums</a></dd>
+      <dd><a href="#gallery">Gallery</a></dd>
+      <dd><a href="#resources">Resources</a></dd>
     </dl>
+  </div>
+  
+  <!-- Tab content areas -->
+  <div class="nine columns">
     <ul class="vertical tabs-content">
-      <li class="active" id="simple1Tab">Tab 1 content</li>
-      <li id="simple2Tab">Tab 2 content</li>
+    
+      <!-- Home tab content -->
+      
+      <li class="active" id="homeTab">
+        <div class="eight columns">
+          <h3>Welcome!</h3>
+          <p>This is the new website for Prestige Wörldwide, a World of Warcraft Horde guild on the US-Thunderhorn realm. This site includes general information about our guild, as well as our guild activities and raids, the roster, and more. A few resources are also provided, which might help you learn more about your class and role, the raid encounters that we're working on, or about WoW in general.</p>
+          <hr/>
+          <h3 class="subheader">News</h3>
+          <!-- News item -->
+          <!--
+          <div class="panel">
+            <h5>Headline</h5>
+            <h5><small>Date</small></h5>
+            <p>Description</p>
+          </div>
+          -->
+          <div class="panel">
+            <h5>Website launched!&nbsp;&nbsp;<span class="round label">New</span></h5>
+            <h5><small>January 14, 2013</small></h5>
+            <p>The new website is officially live! This is just my initial idea for what the website should look like and what information it should contain. All ideas, criticisms, and suggestions are welcome!</p>
+          </div>
+        </div>
+        <aside class="four columns">
+          <img src="images/tabard.png" alt="This image represents the guild tabard for Prestige Wörldwide." style="margin-top:15px;margin-bottom:10px;"/>
+          <div class="panel">
+            <h5>Tip of the week</h5>
+            <p>This box contains a quick tip about WoW or about our guild that you might not have known. Check back each week for a new tip!</p>
+          </div>
+        </aside>          
+      </li>
+      
+      <!-- End of Home tab content -->
+      
+      <!-- About Us tab content -->
+      <li id="aboutTab">
+        <h3>About the guild</h3>
+        <h4><small>Click the round tabs below to learn about different aspects of our guild.</small></h4>
+        <dl class="tabs pill">
+          <dd class="active"><a href="#general">General</a></dd>
+          <dd><a href="#officers">Meet the officers</a></dd>
+        </dl>
+      </li>
+      
+      <!-- End of About Us tab content -->
     </ul>
     
 <!--
@@ -130,10 +178,6 @@
       </li>
       -->
   </div>
-  
-  <div class="nine columns">
-    <h4>Content section.</h4>
-  </div>
 </div>
   
   
@@ -146,6 +190,7 @@
         <div class="six columns">
           <p>&copy; Copyright no one at all. Go to town.</p>
         </div>
+        <!--
         <div class="six columns">
           <ul class="link-list right">
             <li><a href="#">Link 1</a></li>
@@ -154,6 +199,7 @@
             <li><a href="#">Link 4</a></li>
           </ul>
         </div>
+        -->
       </div>
     </div> 
   </footer>
@@ -168,7 +214,9 @@
   <!-- Include Orbit scripts -->
   <script type="text/javascript">
    $(window).load(function() {
-       $("#slider").orbit();
+      $("#slider").orbit({
+          advanceSpeed: 10000
+      });
    });
   </script>
 </body>
