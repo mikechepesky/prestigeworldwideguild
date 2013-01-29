@@ -13,6 +13,47 @@
    Shared Styles
 ----------------------------------------- */
 
+/*
+body
+{
+  background: url('../images/irongrip.png');
+}
+*/
+
+#siteHeader h1.subheader
+{
+  color: #2ba6cb;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#showcaseTop, #contentArea
+{
+  padding: 2em 20px;
+}
+
+#showcase
+{
+  background: #003366;
+  background: rgba(0, 96, 168, 0.4);
+  background: url('../images/irongrip.png');
+}
+
+#showcase h1, #showcase h4
+{
+  color: #ddd;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#showcaseTop
+{
+  background: rgba(0, 96, 168, 0.4);
+}
+
+#siteHeader, #contentArea, #siteFooter
+{
+  background: #DDD;
+  background: rgba(245, 245, 245, 0.96);
+}
 
 
 /* -----------------------------------------

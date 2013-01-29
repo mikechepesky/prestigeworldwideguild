@@ -33,7 +33,7 @@
 </head>
 <body>
 <!-- Header and external links -->
-  
+<div id="siteHeader">
   <div class="row">
     <div class="six columns">
       <h1 class="subheader">Prestige Wörldwide
@@ -48,26 +48,40 @@
       </ul>
     </div>
   </div>
+</div>
   
   <!-- End header and external links -->
   
   <!-- Orbit content slider -->
+<!--
 <div class="row">
-  <div class="twelve columns">
-    <div id="slider">
-      <img src="http://placehold.it/1000x400&text=[img 1]" data-caption="#captionOne"/>
-      <img src="http://placehold.it/1000x400&text=[img 2]" data-caption="#captionTwo"/>
-      <img src="http://placehold.it/1000x400&text=[img 3]" data-caption="#captionThree"/>
-      <img src="http://placehold.it/1000x400&text=[img 4]" data-caption="#captionFour"/>
+  
+</div>
+-->
+<div id="showcase">
+  <div id="showcaseTop">
+    <div class="row">
+      <div class="six columns">
+        <h1>My Heading</h1>
+      </div>
+      <div class="six columns">
+        <div id="slider">
+          <img src="http://placehold.it/600x400&text=[img 1]" data-caption="#captionOne"/>
+          <img src="http://placehold.it/600x400&text=[img 2]" data-caption="#captionTwo"/>
+          <img src="http://placehold.it/600x400&text=[img 3]" data-caption="#captionThree"/>
+          <img src="http://placehold.it/600x400&text=[img 4]" data-caption="#captionFour"/>
+        </div>
+        <span class="orbit-caption" id="captionOne">Here is the first caption.</span>
+        <span class="orbit-caption" id="captionTwo">Here is the second caption.</span>
+        <span class="orbit-caption" id="captionThree">Here is the third caption.</span>
+        <span class="orbit-caption" id="captionFour">Here is the fourth caption.</span>
+      </div>
     </div>
-    <span class="orbit-caption" id="captionOne">Here is the first caption.</span>
-    <span class="orbit-caption" id="captionTwo">Here is the second caption.</span>
-    <span class="orbit-caption" id="captionThree">Here is the third caption.</span>
-    <span class="orbit-caption" id="captionFour">Here is the fourth caption.</span>
   </div>
 </div>
   
 <!-- Main content area (left nav and content) -->
+<div id="contentArea">
 <div class="row">
   <!-- Left nav -->
   <div class="three columns">
@@ -179,10 +193,11 @@
       -->
   </div>
 </div>
+</div>
   
   
   <!-- Footer -->
-  
+<div id="siteFooter">
   <footer class="row">
     <div class="twelve columns">
       <hr />
@@ -203,6 +218,7 @@
       </div>
     </div> 
   </footer>
+</div>
 
   <!-- Included JS Files (Compressed) -->
   <script src="javascripts/jquery.js"></script>
