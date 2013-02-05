@@ -2,7 +2,7 @@
 
 /* Orbit slider on main page
    Overridden so that partial content isn't displayed */
-#slider { background: center center #f4f4f4; height: 381px; }
+#slider { background: center center #f4f4f4;}
 #slider div { display: none; }
 #slider img { display: none; }
 #slider.orbit { background: none; }

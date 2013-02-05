@@ -23,7 +23,7 @@ body
 #siteHeader h1.subheader
 {
   color: #2ba6cb;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 #showcaseTop, #contentArea
@@ -47,6 +47,27 @@ body
 #showcaseTop
 {
   background: rgba(0, 96, 168, 0.4);
+}
+
+#showcase blockquote
+{
+    border-left: none;
+}
+
+#showcase blockquote p
+{
+    line-height: 140%;
+    font-family: serif;
+    font-size: 200%;
+    color: #ddd;
+}
+
+#showcase blockquote cite
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 100%;
+    color: #bbb;
 }
 
 #siteHeader, #contentArea, #siteFooter
